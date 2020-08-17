@@ -1,4 +1,4 @@
-from math_series.series import lucas_check , fibonacci , sum_series 
+from math_series.series import lucas_check , fibonacci , sum_series ,print_out
 
 def test_lucas_0():
     expected = 2
@@ -204,3 +204,6 @@ def test_sum_11():
     expected = 288
     actual = sum_series(11)
     assert actual == expected
+
+if __name__=="__main__":
+    assert print_out()
