@@ -1,4 +1,4 @@
-from math_series.series import lucas_check , fibonacci , sum_series ,print_out
+from math_series.series import lucas_check , fibonacci , sum_series 
 
 def test_lucas_0():
     expected = 2
@@ -146,64 +146,157 @@ def test_fibonacci_16():
     assert actual == expected
 
 def test_sum_0():
-    expected = 2
-    actual = sum_series(0)
+    expected = 0
+    actual = sum_series(0,0,0)
     assert actual == expected
 
 def test_sum_1():
     expected = 2
-    actual = sum_series(1)
+    actual = sum_series(2,0,2)
     assert actual == expected
 
 def test_sum_2():
     expected = 4
-    actual = sum_series(2)
+    actual = sum_series(2,0,0)
     assert actual == expected
 
 def test_sum_3():
-    expected = 6
-    actual = sum_series(3)
+    expected = 2
+    actual = sum_series(3,0,0)
     assert actual == expected
 
 def test_sum_4():
-    expected = 10
-    actual = sum_series(4)
+    expected = 3
+    actual = sum_series(4,0,0)
     assert actual == expected
 
 def test_sum_5():
-    expected = 16
-    actual = sum_series(5)
+    expected = 5
+    actual = sum_series(5,0,0)
     assert actual == expected
 
 def test_sum_6():
-    expected = 26
-    actual = sum_series(6)
+    expected = 8
+    actual = sum_series(6,0,0)
     assert actual == expected
 
 def test_sum_7():
-    expected = 42
-    actual = sum_series(7)
+    expected = 13
+    actual = sum_series(7,0,0)
     assert actual == expected
 
 def test_sum_8():
-    expected = 68
-    actual = sum_series(8)
+    expected = 21
+    actual = sum_series(8,0,0)
     assert actual == expected
 
 def test_sum_9():
-    expected = 110
-    actual = sum_series(9)
+    expected = 34
+    actual = sum_series(9,0,0)
     assert actual == expected
 
 def test_sum_10():
-    expected = 178
-    actual = sum_series(10)
+    expected = 55
+    actual = sum_series(10,0,0)
     assert actual == expected
 
 def test_sum_11():
-    expected = 288
-    actual = sum_series(11)
+    expected = 89
+    actual = sum_series(11,0,0)
     assert actual == expected
+
+def test_sum_0():
+    expected = 2
+    actual = sum_series(0,2,1)
+    assert actual == expected
+
+def test_sum_1():
+    expected = 1
+    actual = sum_series(1,2,1)
+    assert actual == expected
+
+def test_sum_2():
+    expected = 3
+    actual = sum_series(2,2,1)
+    assert actual == expected
+
+def test_sum_3():
+    expected = 4
+    actual = sum_series(3,2,1)
+    assert actual == expected
+
+def test_sum_4():
+    expected = 7
+    actual = sum_series(4,2,1)
+    assert actual == expected
+
+def test_sum_5():
+    expected = 11
+    actual = sum_series(5,2,1)
+    assert actual == expected
+
+def test_sum_6():
+    expected = 18
+    actual = sum_series(6,2,1)
+    assert actual == expected
+
+def test_sum_7():
+    expected = 29
+    actual = sum_series(7,2,1)
+    assert actual == expected
+
+def test_sum_8():
+    expected = 47
+    actual = sum_series(8,2,1)
+    assert actual == expected
+
+def test_sum_9():
+    expected = 76
+    actual = sum_series(9,2,1)
+    assert actual == expected
+
+def test_sum_10():
+    expected = 123
+    actual = sum_series(10,2,1)
+    assert actual == expected
+
 
 if __name__=="__main__":
     assert print_out()
+
+def test_sum_523():
+    expected = 8
+    actual = sum_series(5,2,3)
+    assert actual==expected
+
+def test_sum_412():
+    expected = 5
+    actual = sum_series(4,1,2)
+    assert actual==expected
+
+def test_sum_423():
+    expected = 5
+    actual = sum_series(4,2,3)
+    assert actual==expected
+
+def test_sum_434():
+    expected = 4
+    actual = sum_series(4,3,4)
+    assert actual==expected
+
+def test_sum_445():
+    expected = 4
+    actual = sum_series(4,4,5)
+    assert actual==expected
+
+
+def test_sum_756():
+    expected = 11
+    actual = sum_series(7,5,6)
+    assert actual==expected
+
+def test_sum_201819():
+    expected = 37
+    actual = sum_series(20,18,19)
+    assert actual==expected
+
